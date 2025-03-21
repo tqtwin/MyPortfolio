@@ -4,56 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans text-gray-800 leading-relaxed">
     <!-- Header -->
-    <header>
-        <h1>My Portfolio</h1>
+    <header class="bg-gray-800 text-white p-4 text-center">
+        <h1 class="mb-2">My Portfolio</h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="https://drive.google.com/file/d/1vt1gQnINtmoDzxIi-gUIqAe06xVpHvyM/view?usp=sharing">Contact</a>
+            <a href="#about" class="text-white no-underline mx-4 hover:text-blue-400">About</a>
+            <a href="#projects" class="text-white no-underline mx-4 hover:text-blue-400">Projects</a>
+            <a href="https://drive.google.com/file/d/1vt1gQnINtmoDzxIi-gUIqAe06xVpHvyM/view?usp=sharing" class="text-white no-underline mx-4 hover:text-blue-400">Contact</a>
         </nav>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="./avatar.jpg" alt="My Photo" class="profile-img">
+    <section id="about" class="p-8 text-center">
+        <h2 class="text-2xl mb-4">About Me</h2>
+        <img src="./avatar.jpg" alt="My Photo" class="rounded-full w-40 h-40 mx-auto my-4">
         <p>I am Thang, a developer. I love creating and building exciting projects.</p>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <a href="https://client-user-alpha.vercel.app/">
-                <h3>Website for Selling Stationery</h3>
-                <img src="./image.png" alt="Project 1">
-                <p>Website built with React.js for the frontend and Node.js with the Express.js framework for the backend.</p>
-            </a>
+    <section id="projects" class="p-8 bg-gray-100 text-center">
+        <h2 class="text-2xl mb-4">My Projects</h2>
+        <div class="flex justify-center gap-8 flex-wrap mt-4">
+            <div class="bg-white p-4 rounded-lg w-80 shadow-md">
+                <a href="https://client-user-alpha.vercel.app/" class="no-underline text-black">
+                    <h3 class="text-xl mb-2">Website for Selling Stationery</h3>
+                    <img src="./image.png" alt="Project 1" class="w-full h-auto rounded">
+                    <p>Website built with React.js for the frontend and Node.js with the Express.js framework for the backend.</p>
+                    <h1 class="text-lg mt-2">Main functions:</h1>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Product purchasing</li>
+                        <li>Payment integration with MoMo</li>
+                        <li>Product commenting</li>
+                        <li>Product search</li>
+                        <li>Discount code application</li>
+                    </ul>
+                </a>
             </div>
-            <div class="project">
-                <a href="https://client-user-alpha.vercel.app/">
-                <h3>Company introduction website</h3>
-                <img src="./image2.png" alt="Project 2">
-                <p>Website built with React.js as a static site.</p>
-               </a>
+            <div class="bg-white p-4 rounded-lg w-80 shadow-md">
+                <a href="https://client-admin-gamma.vercel.app/" class="no-underline text-black">
+                    <h3 class="text-xl mb-2">Website for Selling Stationery (Admin)</h3>
+                    <img src="./image3.png" alt="Project 1" class="w-full h-auto rounded">
+                    <p>Website built with React.js for the frontend and Node.js with the Express.js framework for the backend.</p>
+                    <h1 class="text-lg mt-2">Main functions:</h1>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Product management</li>
+                        <li>User management</li>
+                        <li>Staff management</li>
+                        <li>Supplier category management</li>
+                        <li>Statistics and reporting</li>
+                    </ul>
+
+                </a>
             </div>
-            <!-- <div class="project">
-                <h3>Project 3</h3>
-                <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                <p>A short description of Project 3: This project taught me [skill].</p>
-            </div> -->
+            <div class="bg-white p-4 rounded-lg w-80 shadow-md">
+                <a href="https://congtyac.vercel.app/" class="no-underline text-black">
+                    <h3 class="text-xl mb-2">Company introduction website</h3>
+                    <img src="./image2.png" alt="Project 2" class="w-full h-auto rounded">
+                    <p>Website built with React.js as a static site.</p>
+                    <h1 class="text-lg mt-2">Main functions:</h1>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Supports three languages (English, Vietnamese, and Chinese)</li>
+                        <li>Company introduction with detailed information</li>
+                        <li>Interactive effects and animations for enhanced user experience</li>
+                    </ul>
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2025 Thang. Contact: <a href="mailto:thangtran081003@gmail.com">thangtran081003@gmail.com</a></p>
-        <p><a href="https://github.com/tqtwin">GitHub</a></p>
+    <footer class="bg-gray-800 text-white text-center p-4 w-full">
+        <p>© 2025 Thang. Contact: <a href="mailto:thangtran081003@gmail.com" class="text-blue-400 hover:underline">thangtran081003@gmail.com</a></p>
+        <p><a href="https://github.com/tqtwin" class="text-blue-400 hover:underline">GitHub</a></p>
     </footer>
 </body>
 </html>
